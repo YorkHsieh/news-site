@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daily News｜每日時事</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Daily News<span>每日時事</span></div>
+    <nav class="nav">
+      <a href="index.html" class="active">最新</a>
+      <a href="#" id="nav-all">全部</a>
+      <a href="#" data-category="政治" class="nav-cat">政治</a>
+      <a href="#" data-category="國際" class="nav-cat">國際</a>
+      <a href="#" data-category="科技" class="nav-cat">科技</a>
+      <a href="#" data-category="生活" class="nav-cat">生活</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="main-content">
+      <h1>最新新聞</h1>
+      <div id="news-list" class="news-list">
+        <!-- JS 動態塞卡片 -->
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="搜尋標題或關鍵字…" />
+      </div>
+      <div class="date-filter">
+        <label for="date-input">依日期查詢</label>
+        <input type="date" id="date-input" />
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Daily News 每日時事｜Made by 祐子（超猛維運）</p>
+  </footer>
+
+  <script src="data/articles.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
