@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <!-- 進場 Logo 畫面 -->
+  <div id="splash" class="splash-screen">
+    <div class="splash-logo">
+      <span class="logo-main">Fake News</span>
+      <span class="logo-sub">每日假新聞</span>
+    </div>
+  </div>
   <header class="site-header">
     <div class="logo">Fake News<span>每日假新聞</span></div>
     <nav class="nav">
@@ -41,6 +48,32 @@
   <footer class="site-footer">
     <p>© 2025 Fake News 每日假新聞｜Made by York</p>
   </footer>
+    <footer class="site-footer">
+    <p>© 2025 Daily News 每日時事｜Made by York</p>
+  </footer>
+
+  <!-- 讓 Logo 畫面延遲一下再淡出 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const splash = document.getElementById("splash");
+      if (!splash) return;
+
+      // 停留 1.6 秒後開始淡出
+      setTimeout(() => {
+        splash.classList.add("hide");
+        // 等 CSS transition 結束再從 DOM 移除
+        setTimeout(() => {
+          splash.remove();
+        }, 700);
+      }, 1600);
+    });
+  </script>
+
+  <script src="data/articles.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+
 
   <script src="data/articles.js"></script>
   <script src="main.js"></script>
