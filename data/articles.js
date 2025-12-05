@@ -63,16 +63,4 @@ const ARTICLES = [
       若能培養規律運動習慣，可在一定程度上改善睡眠品質與情緒狀況。</p>
     `
   },
-  {
-  id: "2025-12-05-001",
-  title: "示範新聞標題",
-  date: "2025-12-05T09:30:00+08:00",
-  category: "科技",
-  tags: ["AI", "晶片"],
-  summary: "這是一則示範用的新聞摘要……",
-  coverImage: "https://via.placeholder.com/800x400?text=Demo",  // 先用這個
-  content: `
-    <p>這裡是內文，可以放很多段。</p>
-  `
-  }
 ];
